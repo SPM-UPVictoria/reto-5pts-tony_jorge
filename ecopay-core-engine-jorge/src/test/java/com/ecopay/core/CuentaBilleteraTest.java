@@ -129,7 +129,7 @@ public class CuentaBilleteraTest {
         assertEquals(500.0, cuenta.getSaldo(), 0.001);
         assertEquals(100, cuenta.getPuntosLealtad());
     }
-    //16.
+    //16. Test otorgar puntos de lealtad
     @Test
     public void deberiaFallarBonoVIPPorFaltadeSaldo() throws TransaccionInvalidaException {
         CuentaBilletera cuenta = new CuentaBilletera("ACC-01", "Juan Perez", 2000.0, 0);
